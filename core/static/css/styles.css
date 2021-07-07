@@ -1,14 +1,26 @@
 a{
 	color: #fff;
-};
-
-body{
-    background-color:#FFF8DC;
-};
+}
 
 .header{
-    background-image: url("/core/static/images/Ativo_1.png");
+    background-image: url("./Ativo_1.png");
     background-repeat: no-repeat;
     background-size: 38mm;
-    background-color: #8B3A3A
-};
+    background-color: lightslategrey;
+}
+body{
+    background-color: #f1f1f1 !important;
+}
+.navbar{
+    padding-top: 20px !important;
+}
+.nav-item{
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.nav-link{
+    color:#fff !important;
+    font-size: 12px !important;
+    padding: 0 0 5px 0 !important;
+    display: unset !important;
+}

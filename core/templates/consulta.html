@@ -13,7 +13,7 @@
     <section class="header">
         <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="http://127.0.0.1:8000">E-commerce</a>
+            <a class="navbar-brand" href="http://127.0.0.1:8000" style="font-size: 10mm; font-weight: 900; font-style: oblique">E-commerce</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fa fa-bars"></i>
             </button>
@@ -22,9 +22,17 @@
                 <li class="nav-item">
                   <a class="nav-link active-home" href="http://127.0.0.1:8000">INÍCIO</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8000/consulta">CONSULTA</a>
-                </li>
+                <div class="dropdown">
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" type="button" id="dropdownM" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      CONSULTA
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownM">
+                      <a class="dropdown-item" href="http://127.0.0.1:8000/consulta">Planilha dos Produtos</a>
+                      <a class="dropdown-item" href="http://127.0.0.1:8000/produto">Adicionar Produto</a>
+                    </div>
+                  </li>
+                </div>
                 <li class="nav-item">
                   <a class="nav-link" href="#">SOBRE NÓS</a>
                 </li>
@@ -40,7 +48,7 @@
           <div class="row banner">
             <div class="col-md-6">
               <p>
-                Essa página conterá uma lista de produtos adicionados pelo administrador do site.
+                Esta página conterá uma lista de produtos adicionados pelo administrador do site.
               </p>
             </div>
             </div>

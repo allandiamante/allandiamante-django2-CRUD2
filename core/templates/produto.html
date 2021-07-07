@@ -1,65 +1,74 @@
 {% load bootstrap4 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Produto</title>
-    {% bootstrap_css %}
-    
-</head>
-<body>
-  <section class="header">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="http://127.0.0.1:8000">E-commerce</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto text-right">
-            <li class="nav-item">
-              <a class="nav-link active-home" href="http://127.0.0.1:8000">INÍCIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://127.0.0.1:8000/consulta">CONSULTA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SOBRE NÓS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://127.0.0.1:8000/contato">NOS CONTATE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://127.0.0.1:8000/admin">LOGIN</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="row banner">
-        <div class="col-md-6">
-          <p>
-            Essa página conterá campos para que o administrador possa adicionar um produto.
-          </p>
-        </div>
+  <head>
+      <title>Produto</title>
+      {% bootstrap_css %}
+      <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+      
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="http://127.0.0.1:8000" style="font-size: 10mm; font-weight: 900; font-style: oblique">E-commerce</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto text-right">
+              <li class="nav-item">
+                <a class="nav-link active-home" href="http://127.0.0.1:8000">INÍCIO</a>
+              </li>
+              <div class="dropdown">
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle" type="button" id="dropdownM" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    CONSULTA
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownM">
+                    <a class="dropdown-item" href="http://127.0.0.1:8000/consulta">Planilha dos Produtos</a>
+                    <a class="dropdown-item" href="http://127.0.0.1:8000/produto">Adicionar Produto</a>
+                  </div>
+                </li>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SOBRE NÓS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/contato">NOS CONTATE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/admin">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="row banner">
+          <div class="col-md-6">
+            <p>
+              Esta página conterá campos para que o administrador possa adicionar um produto.
+            </p>
+          </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="service">        
-  </section>
-    <div class="container">
-        <h1>Produto</h1>
-        {% bootstrap_messages %}
+    </section>
+    <section class="service">        
+    </section>
+      <div class="container">
+          <h1>Produto</h1>
+          {% bootstrap_messages %}
 
-        <form action="{% url 'produto' %}" method="post" class="form" autocomplete="off" enctype="multipart/form-data">
-            {% csrf_token %}
+          <form action="{% url 'produto' %}" method="post" class="form" autocomplete="off" enctype="multipart/form-data">
+              {% csrf_token %}
 
-            {% bootstrap_form form %}
-            {% buttons %}
-                <button type="submit" class="btn btn-dark">Cadastrar</button>
-            {% endbuttons %}
-        </form>
-    </div>
-{% bootstrap_javascript jquery='full' %}
-</body>
+              {% bootstrap_form form %}
+              {% buttons %}
+                  <button type="submit" class="btn btn-dark">Cadastrar</button>
+              {% endbuttons %}
+          </form>
+      </div>
+  {% bootstrap_javascript jquery='full' %}
+  </body>
 </html>
