@@ -1,9 +1,13 @@
 a{
+	color: #fff;
+};
 
-}
+body{
+    background-color: rgb(92, 80, 133);
+};
 
 .header{    
     background-repeat: no-repeat;
     background-size: 38mm;
     background-color: lightslategrey;
-}
+};
