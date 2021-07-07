@@ -3,10 +3,10 @@ a{
 }
 
 .header{
-    background-image: url("./Ativo_1.png");
+    background-image: url("../images/Ativo_1.png");
     background-repeat: no-repeat;
-    background-size: 38mm;
-    background-color: lightslategrey;
+    background-size: 32mm;
+    background-color: rgb(102, 128, 155);
 }
 body{
     background-color: #f1f1f1 !important;
