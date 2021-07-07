@@ -7,10 +7,14 @@ from .models import Produto
 
 
 def index(request):
+    return render(request, 'index.html')
+
+def consulta(request):
     context = {
         'produtos': Produto.objects.all()
     }
-    return render(request, 'index.html', context)
+    return render(request, 'consulta.html', context)
+
 
 
 def contato(request):
