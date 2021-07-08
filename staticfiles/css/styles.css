@@ -9,6 +9,64 @@ a{
     background-size: 32mm;
     background-color: rgb(102, 128, 155);
 }
+
 body{
     background-color: #f1f1f1 !important;
+}
+
+.navbar{
+    padding-top: 20px !important;
+}
+
+.nav-item{
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.nav-link{
+    color:#fff !important;
+    font-size: 12px !important;
+    padding: 0 0 5px 0 !important;
+    display: unset !important;
+}
+
+.fa-bars{
+    color: #fff;
+    font-size: 40px;
+}
+
+.navbar-toggler{
+    border: 0 !important;
+    outline: none !important;
+    padding: initial !important;
+}
+
+.active-home{
+    border-bottom: 2px solid #fff;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid #fff;
+}
+
+
+.banner{
+    margin-top: 1%;
+}
+
+.banner a{
+    padding: 0px;
+    width: 150px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: rgb(71, 45, 45);
+    border: 2px solid lightslategray;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.banner a:hover{
+    color: #fff;
 }

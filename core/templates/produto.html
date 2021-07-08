@@ -19,11 +19,11 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto text-right">
               <li class="nav-item">
-                <a class="nav-link active-home" href="http://127.0.0.1:8000">INÍCIO</a>
+                <a class="nav-link" href="http://127.0.0.1:8000">INÍCIO</a>
               </li>
               <div class="dropdown">
                 <li class="nav-item">
-                  <a class="nav-link dropdown-toggle" type="button" id="dropdownM" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle active-home" type="button" id="dropdownM" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     CONSULTA
                   </a>
                   <div class="dropdown-menu" aria-labelledby="dropdownM">
@@ -43,21 +43,12 @@
               </li>
             </ul>
           </div>
-        </nav>
-        <div class="row banner">
-          <div class="col-md-6">
-            <p>
-              Esta página conterá campos para que o administrador possa adicionar um produto.
-            </p>
-          </div>
-          </div>
+        </nav>        
         </div>
       </div>
     </section>
-    <section class="service">        
-    </section>
+    <section class="body">
       <div class="container">
-          <h1>Produto</h1>
           {% bootstrap_messages %}
 
           <form action="{% url 'produto' %}" method="post" class="form" autocomplete="off" enctype="multipart/form-data">
@@ -69,6 +60,7 @@
               {% endbuttons %}
           </form>
       </div>
-  {% bootstrap_javascript jquery='full' %}
+      {% bootstrap_javascript jquery='full' %}
+    </section>
   </body>
 </html>
