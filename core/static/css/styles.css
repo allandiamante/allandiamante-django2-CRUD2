@@ -10,10 +10,15 @@ a{
     background-size: 30mm;
     height: 100px;
     background-color: rgb(102, 128, 155);   
+
 }
 
 body{
     background-color: #f1f1f1 !important;
+}
+
+.body{
+    padding-top: 40px;
 }
 
 .navbar{
@@ -73,6 +78,8 @@ body{
     color: #fff;
 }
 
-.consultaespecifico{
-    margin-left: 0px;
+.dropdown-item{
+    color: rgb(60, 69, 78);
+    
+    
 }

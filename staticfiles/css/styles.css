@@ -1,17 +1,24 @@
 a{
 	color: #fff;
-    font-size: 5mm;
+    font-size: 4mm;
 }
 
 .header{
     background-image: url("../images/Ativo_1.png");
+    background-position: 1.5cm;    
     background-repeat: no-repeat;
-    background-size: 32mm;
-    background-color: rgb(102, 128, 155);
+    background-size: 30mm;
+    height: 100px;
+    background-color: rgb(102, 128, 155);   
+
 }
 
 body{
     background-color: #f1f1f1 !important;
+}
+
+.body{
+    padding-top: 40px;
 }
 
 .navbar{
@@ -59,7 +66,7 @@ body{
     width: 150px;
     display: inline-block;
     text-decoration: none !important;
-    color: rgb(71, 45, 45);
+    color: #fff;
     border: 2px solid lightslategray;
     border-radius: 5px;
     text-align: center;
@@ -69,4 +76,10 @@ body{
 
 .banner a:hover{
     color: #fff;
+}
+
+.dropdown-item{
+    color: rgb(60, 69, 78);
+    
+    
 }
