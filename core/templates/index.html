@@ -5,7 +5,9 @@
   <head>
     <title>Home</title>
     {% bootstrap_css %}   
-    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    {% bootstrap_javascript jquery='full' %}
+    
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">    
   </head>
   <body>
     <section class="header">
@@ -17,7 +19,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto text-right">
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link active-home" href="#">INÍCIO</a>
               </li>
               <div class="dropdown">
@@ -26,7 +28,7 @@
                     CONSULTA
                   </a>
                   <div class="dropdown-menu" aria-labelledby="dropdownM">
-                    <a class="dropdown-item" href="http://127.0.0.1:8000/consulta">Planilha dos Produtos</a>
+                    <a class="dropdown-item"  href="http://127.0.0.1:8000/consulta">Planilha dos Produtos</a>
                     <a class="dropdown-item" href="http://127.0.0.1:8000/produto">Adicionar Produto</a>
                   </div>
                 </li>
@@ -61,6 +63,6 @@
     </section>
     <section class="service">        
     </section>
-  {% bootstrap_javascript jquery='full' %}
+  
   </body>
 </html>
