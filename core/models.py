@@ -6,6 +6,8 @@ from django.db.models import signals
 from django.template.defaultfilters import slugify
 
 
+
+
 class Base(models.Model):
     criado = models.DateField('Data de Criação', auto_now_add=True)
     modificado = models.DateField('Data de Atualização', auto_now=True)
@@ -13,7 +15,6 @@ class Base(models.Model):
 
     class Meta:
         abstract = True
-
 
 class Produto(Base):
     nome = models.CharField('Nome', max_length=100)

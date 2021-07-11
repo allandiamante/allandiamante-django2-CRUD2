@@ -14,11 +14,10 @@ def consulta1(request, pk):
     x = Produto.objects.all()
     context = {
         'produtos': x[(pk*3):((1+pk)*3)],
-        'qnt_produtos': range(0,int((len(Produto.objects.all())) /3))
+        #Arredondando pra cima a divisão para nav de consulta ter as paginas corretas
+        'qnt_produtos': range(0,(int( (len(Produto.objects.all()) /3)) +  (( len(Produto.objects.all()) %3)>0)))
         }
     return render(request, 'consulta.html', context)
-
-
 
 def contato(request):
     form = ContatoForm(request.POST or None)
