@@ -3,4 +3,4 @@
 Projeto CRUD
 (incompleto/ em desenvolvimento)
 
-Projeto upado na Heroku https://djangoref1-ads.herokuapp.com/
+Projeto upado na Heroku https://django2-adscrud.herokuapp.com/
