@@ -36,8 +36,35 @@ def contato(request):
     return render(request, 'contato.html', context)
 
 
-def produto(request):
-    if str(request.user) != 'AnonymousUser':
+######### Esse add produto requer o login do administrador##############
+
+# def produto(request):
+#     if str(request.user) != 'AnonymousUser':
+#         if str(request.method) == 'POST':
+#             form = ProdutoModelForm(request.POST, request.FILES)
+#             if form.is_valid():
+
+#                 form.save()
+
+#                 messages.success(request, 'Produto salvo com sucesso.')
+#                 form = ProdutoModelForm()
+#             else:
+#                 messages.error(request, 'Erro ao salvar produto.')
+#         else:
+#             form = ProdutoModelForm()
+#         context = {
+#             'form': form
+#         }
+#         return render(request, 'produto.html', context)
+#     else:
+#         return redirect('index')
+
+
+
+
+######### Esse add produto não requer o login do administrador##############
+
+def produto(request):    
         if str(request.method) == 'POST':
             form = ProdutoModelForm(request.POST, request.FILES)
             if form.is_valid():
@@ -54,9 +81,4 @@ def produto(request):
             'form': form
         }
         return render(request, 'produto.html', context)
-    else:
-        return redirect('index')
-
-def pegar_produto(query=None):
-    queryset = []
-    queries = query.spliy
+    

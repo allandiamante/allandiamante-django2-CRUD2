@@ -8,4 +8,5 @@ urlpatterns = [
     path('produto/', produto, name='produto'),
     path('consulta/<int:pk>', consulta1, name='consulta1'),
     
+    
 ]

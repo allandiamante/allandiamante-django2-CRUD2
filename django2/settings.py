@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'stdimage',
     'bootstrap4',
     'core',
+    'send',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'allandimante@gmail.com'
+EMAIL_HOST_PASSWORD = 'ndihdpjzospfhpea'
+EMAIL_PORT = 587
+EMAIL_USER_TSL = True
+DEFAULT_FROM_EMAIL = 'allandimante@gmail.com'
