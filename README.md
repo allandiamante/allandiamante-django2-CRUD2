@@ -9,4 +9,4 @@ Este projeto teve como banco de dados: MySQL
 
 E está upado na Heroku para melhor visualização. https://django2-crud-ads.herokuapp.com/
 
-OBS: a Heroku armazena momentaneamente fotos quando registrada pela aplicação, imagens antigas possuirá um ícone.
+OBS: a Heroku armazena momentaneamente fotos quando registrada pela aplicação, imagem antiga possuirá um ícone.
