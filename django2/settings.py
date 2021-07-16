@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-
+# Usando MySQL no servidor local 
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
@@ -89,7 +89,6 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 #         'PORT': '3306',
 #     }
 # }
-
 
 DATABASES = {
     'default': dj_database_url.config()
